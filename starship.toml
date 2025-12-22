@@ -1,0 +1,31 @@
+# ~/.config/starship.toml
+
+# 1. Define the format (layout) of your prompt
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$character"""
+# 2. Force the Username to appear
+[username]
+show_always = true
+style_user = "bg:none fg:blue bold"
+format = "[$user]($style)@"
+
+# 3. Force the Hostname (Computer Name) to appear
+[hostname]
+ssh_only = false
+format = "[$hostname](bold dim white): "
+disabled = false
+
+# 4. Make the directory look nice
+[directory]
+truncation_length = 0
+truncate_to_repo = false
+style = "red bold"
+
+# 5. Fix the "Box" symbol issue (if fonts are tricky)
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[✗](bold red)"
