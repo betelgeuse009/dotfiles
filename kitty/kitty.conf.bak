@@ -8,9 +8,3 @@ bold_italic_font auto
 background_opacity 0.95
 include kitty-gruvbox/gruvbox_dark.conf
 term xterm-256color
-
-
-# BEGIN_KITTY_THEME
-# Catppuccin-Frappe
-include current-theme.conf
-# END_KITTY_THEME
